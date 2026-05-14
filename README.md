@@ -2,6 +2,12 @@
   <img src="https://kwickflix.shop/templates/twenty-one-custom/img/logov4.png" alt="KwickFlix" width="800">
 </p>
 
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://kwickflix.shop/)
+[![WHMCS](https://img.shields.io/badge/WHMCS-8.x-orange.svg)](https://www.whmcs.com/)
+[![PHP](https://img.shields.io/badge/PHP-7.4%2B-777bb3.svg)](https://www.php.net/)
+[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](#license)
+[![Module Type](https://img.shields.io/badge/module-Provisioning-success.svg)](#)
+
 # KwickFlix — A No-BS, Production-Grade WHMCS Style Package
 
 A complete WHMCS visual overhaul: a refreshed front-end template (`kwickflix`),
