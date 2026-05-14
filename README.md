@@ -13,9 +13,9 @@ tabbed UI — no CSS edits, no custom.css, no FTP roundtrips for normal changes.
 > not a 2014 invoicing portal.
 
 <p align="center">
-  <img src="docs/screenshots/homepage-hero.png" alt="KwickFlix homepage hero — accent typography, stats grid, social bar" width="900">
+  <strong>🔴 <a href="https://kwickflix.tv">Live Demo — kwickflix.tv</a></strong>
   <br>
-  <em>The kwickflix homepage in its natural habitat</em>
+  <em>See it in action before you install</em>
 </p>
 
 ---
@@ -23,21 +23,20 @@ tabbed UI — no CSS edits, no custom.css, no FTP roundtrips for normal changes.
 ## Table of Contents
 
 1. [What you get](#what-you-get)
-2. [Screenshots](#screenshots)
-3. [The hard rules (read these first)](#the-hard-rules-read-these-first)
-4. [Installation — 3 steps](#installation--3-steps)
-5. [The addon, tab by tab](#the-addon-tab-by-tab)
+2. [The hard rules (read these first)](#the-hard-rules-read-these-first)
+3. [Installation — 3 steps](#installation--3-steps)
+4. [The addon, tab by tab](#the-addon-tab-by-tab)
    - [General](#general)
    - [Header / Navigation](#header--navigation)
    - [Homepage](#homepage)
-   - [Cart / Checkout][def]
+   - [Cart / Checkout](#cart--checkout)
    - [Client Area](#client-area)
    - [Footer](#footer)
-6. [Cart customization deep-dive](#cart-customization-deep-dive)
-7. [When things look broken (cache clearing)](#when-things-look-broken-cache-clearing)
-8. [For developers](#for-developers)
-9. [Compatibility](#compatibility)
-10. [Uninstalling](#uninstalling)
+5. [Cart customization deep-dive](#cart-customization-deep-dive)
+6. [When things look broken (cache clearing)](#when-things-look-broken-cache-clearing)
+7. [For developers](#for-developers)
+8. [Compatibility](#compatibility)
+9. [Uninstalling](#uninstalling)
 
 ---
 
@@ -87,82 +86,6 @@ modules/
 
 README.md                       ← you are here
 ```
-
----
-
-## Screenshots
-
-A taste of what the package looks like in production. All screenshots
-are kept in `docs/screenshots/` — feel free to swap them with shots
-from your own branded install.
-
-### Homepage
-
-<p align="center">
-  <img src="docs/screenshots/homepage-full.png" alt="Full homepage with hero, stats grid, social bar, and logo marquee" width="900">
-  <br>
-  <em>Full homepage — hero with eyebrow + motto + stats grid + social bar + logo marquee</em>
-</p>
-
-### Hero Announcement Box
-
-<p align="center">
-  <img src="docs/screenshots/announcement-box.png" alt="Hero announcement box with rotating multi-color glow halo" width="700">
-  <br>
-  <em>The hero announcement box — admin-controlled card with optional rotating multi-color glow halo</em>
-</p>
-
-### Cart / Checkout — Payment Gateway Picker
-
-<p align="center">
-  <img src="docs/screenshots/payment-gateways.png" alt="Custom payment gateway picker on the checkout page" width="900">
-  <br>
-  <em>The drag-and-drop payment gateway picker — per-card colors, preferred ribbon, custom icons</em>
-</p>
-
-### Cart / Checkout — Full Flow
-
-<p align="center">
-  <img src="docs/screenshots/cart-flow.png" alt="The full cart flow — viewcart, configure, checkout" width="900">
-  <br>
-  <em>The cart in action — order summary, marquee, notice boxes, payment gateways</em>
-</p>
-
-### Client Area Dashboard
-
-<p align="center">
-  <img src="docs/screenshots/client-area.png" alt="Client area dashboard with stat tiles and custom info cards" width="900">
-  <br>
-  <em>Logged-in dashboard — stat tiles, custom info cards, accent-styled WHMCS panels</em>
-</p>
-
-### Admin UI
-
-<p align="center">
-  <img src="docs/screenshots/admin-overview.png" alt="The kwickflixstyle admin UI - tabbed configuration" width="900">
-  <br>
-  <em>The kwickflixstyle admin — every setting at your fingertips, no CSS edits required</em>
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/admin-payment-gateways.png" alt="Payment gateway repeater in the admin" width="900">
-  <br>
-  <em>The payment gateway repeater — drag to reorder, per-row color overrides, ribbon controls</em>
-</p>
-
-### Footer
-
-<p align="center">
-  <img src="docs/screenshots/footer.png" alt="3-column footer with brand block, link columns, and social row" width="900">
-  <br>
-  <em>The 3-column footer — brand block + three link columns, all drag-and-drop reorderable</em>
-</p>
-
-> **Image-hosting note:** to keep the repo lean, screenshots in
-> `docs/screenshots/` should be compressed (tinypng.com or `pngquant`) and
-> kept under ~250KB each. For larger animated demos (GIF/WebM), host them
-> externally and link with `<img src="https://...">` instead of committing
-> them to the repo.
 
 ---
 
@@ -247,6 +170,12 @@ activate. Your settings persist across deactivation/reactivation.
 The admin UI is organized into six tabs. Every setting is documented inline
 with a help description below it — what follows is the high-level overview
 so you know what each tab is for.
+
+**A note on drag-and-drop everywhere:** Any list in the addon that has a
+⋮⋮ grip handle uses the same **live-reorder** UX. Grab the grip, drag,
+and the row physically slides into its new position as you move — no
+phantom drop-indicator lines, no surprises on release. Works on touch
+devices too.
 
 ### General
 
@@ -365,12 +294,6 @@ importing, drop the `mod_kwickflixstyle_settings` table manually first.
 
 Logos, the navbar rows, and the whole-site background.
 
-<p align="center">
-  <img src="docs/screenshots/navbar-rows.png" alt="Primary and secondary navbar rows" width="900">
-  <br>
-  <em>Primary (Row 1) + Secondary (Row 2) navbar — emoji or FA icons, per-item glow colors, drag-and-drop reorder</em>
-</p>
-
 - **Header Logo URL** — replaces the navbar logo. PNG or SVG, ~58px tall.
 - **Top Centered Logo URL** — optional logo rendered above the header bar,
   centered. Useful for a wordmark above an icon-only header logo.
@@ -394,12 +317,6 @@ Logos, the navbar rows, and the whole-site background.
 ### Homepage
 
 The marketing landing page (`homepage.tpl`).
-
-<p align="center">
-  <img src="docs/screenshots/homepage-anatomy.png" alt="Anatomy of the kwickflix homepage" width="900">
-  <br>
-  <em>Anatomy of the homepage — eyebrow, motto, description, stats grid, social bar, logo marquee, testimonials</em>
-</p>
 
 - **Hero Title** — main headline. Supports HTML for `<span class="accent">`
   to highlight words in your accent color.
@@ -428,12 +345,6 @@ crypto logos or accepted payment-method icons.
 
 #### Cart/Checkout — Notice Boxes
 
-<p align="center">
-  <img src="docs/screenshots/cart-notices.png" alt="Three notice box slots on the cart flow" width="800">
-  <br>
-  <em>The three notice slots — CP (configure page), CO Top, CO Bot</em>
-</p>
-
 Three editable alert boxes at fixed positions on the cart flow:
 
 | Slot | Where it renders |
@@ -460,12 +371,6 @@ Rendering rules:
 - Both empty + enabled — nothing renders (no empty box)
 
 #### Cart/Checkout — Payment Gateways
-
-<p align="center">
-  <img src="docs/screenshots/payment-gateways-detail.png" alt="Payment gateway picker with preferred ribbon and color-coded cards" width="800">
-  <br>
-  <em>One card per gateway — drag to reorder, set icon/title/subtext, mark "Preferred" for the gold ribbon</em>
-</p>
 
 The crown jewel. Replaces the stock WHMCS gateway picker with a fully
 admin-controlled, drag-and-drop, per-card-customizable list.
@@ -509,12 +414,6 @@ gateway list.
 ### Client Area
 
 The post-login dashboard.
-
-<p align="center">
-  <img src="docs/screenshots/client-area-detail.png" alt="Client area dashboard with stat tiles and info cards" width="900">
-  <br>
-  <em>Top stat tiles + custom info cards above the WHMCS-native panels</em>
-</p>
 
 - **Top Stat Tiles** — the row of cards at the top of `clientareahome.tpl`.
   Default tiles: Services, Domains, Invoices, Live Chat. Add/remove/reorder
@@ -665,10 +564,19 @@ guaranteed independent of any CSS-load timing issues.
 
 ### Repeater (drag-and-drop list) pattern
 
-If you want to add a new drag-and-drop list (like Payment Gateways or Stat
-Tiles), follow this pattern:
+Every list in the addon that lets you add/remove/reorder rows uses the
+same `bindRepeater()` helper. The drag-and-drop UX is **live-reorder** —
+the dragged row physically moves into its new position as the cursor
+crosses each target row's vertical midpoint. No phantom drop-indicator
+lines; what you see during the drag IS the final layout. Touch input
+is supported (mobile/tablet admins can drag via the grip).
+
+If you want to add a new drag-and-drop list (like Payment Gateways or
+Stat Tiles), follow this pattern:
 
 1. Create a `kfRenderXyzRow($idx, $row)` function that returns the row HTML.
+   Use the `<details class="kf-card-row">` shell with a `.kf-card-row-grip`
+   span for the drag handle.
 2. In the admin section, render a list of existing rows + an empty `<template>`
    for new rows + an "Add" button.
 3. At the bottom of the admin JS, call:
@@ -682,9 +590,20 @@ Tiles), follow this pattern:
    ```
 4. Process the saved rows in the save handler (loop `$_POST['xyz_rows']`).
 
-`bindRepeater` handles drag-and-drop reordering, the up/down/delete buttons,
-the live-title-sync on the summary line, and the visible-badge toggle. You
-don't have to write any of that — just match the pattern.
+`bindRepeater` handles live-reorder drag, the up/down/delete buttons,
+the live-title-sync on the summary line, the visible-badge toggle, and
+proper renumbering of the form input `name` attributes after every
+add/delete/reorder so `$_POST` arrives as a clean contiguous 0..N-1
+indexed array. You don't have to write any of that — just match the
+pattern.
+
+For very simple value-only lists (a single color picker per row, etc.)
+where the collapsible `<details>` shell would feel heavy, write a
+flat custom mini-repeater instead — the **Announcement Box → Glow
+Colors** field in the addon does this. Look at the inline JS under
+the `annGlow` IIFE in `kwickflixstyle.php` for the ~50-line pattern
+that gives you the same drag, delete, renumber, and `injectHexTwins`
+behavior without the `<details>` overhead.
 
 ---
 
@@ -742,6 +661,3 @@ Most issues are stale templates_c or a missing folder upload.
 
 Built with care. Don't use `custom.css`. Clear `templates_c` after every
 upload. Ship it. 🚀
-
-
-[def]: #cart--checkout
