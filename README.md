@@ -7,7 +7,7 @@
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-777bb3.svg)](https://www.php.net/)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](#license)
 [![Module Type](https://img.shields.io/badge/module-Provisioning-success.svg)](#)
-
+</p>
 # KwickFlix — A No-BS, Production-Grade WHMCS Style Package
 
 A complete WHMCS visual overhaul: a refreshed front-end template (`kwickflix`),
