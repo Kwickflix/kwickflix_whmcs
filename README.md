@@ -1,3 +1,7 @@
+
+<p align="center">
+  <img src="https://kwickflix.shop/templates/twenty-one-custom/img/logov4.png" alt="KwickFlix homepage" width="800">
+</p>
 # KwickFlix — A No-BS, Production-Grade WHMCS Style Package
 
 A complete WHMCS visual overhaul: a refreshed front-end template (`kwickflix`),
